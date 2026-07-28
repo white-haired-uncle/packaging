@@ -43,7 +43,8 @@ MYTHTV_CONFIGURE_OPTS +=    --compile-type=$(MYTHTV_COMPILE_TYPE) \
 				--enable-libvpx \
 				--enable-libmp3lame \
 				--enable-libx264 \
-				--enable-vdpau
+				--enable-vdpau \
+				--qmake=/usr/bin/qmake6 
 
 #                                    #
 # Architecture dependent build flags #
@@ -72,7 +73,7 @@ endif
 
 #Mythplugins configure opts
 MYTHPLUGINS_CONFIGURE_OPTS += --prefix=/usr \
-                              --qmake=/usr/bin/qmake \
+                              --qmake=/usr/bin/qmake6 \
 
 ifeq "$(DEB_BUILD_ARCH)" "armhf"
 	MYTHPLUGINS_CONFIGURE_OPTS += --disable-opengl

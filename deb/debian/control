@@ -59,7 +59,6 @@ Build-Depends:
  libmusicbrainz5-dev,
  libnet-upnp-perl,
  libpulse-dev,
- libqt5opengl5-dev,
  libraspberrypi-dev [armhf],
  libsamplerate0-dev,
  libsoap-lite-perl,
@@ -98,10 +97,8 @@ Build-Depends:
  python3-pip,
  python3-requests,
  python3-setuptools,
- qt5-qmake,
- qtdeclarative5-dev,
- qtwebengine5-dev,
- qtscript5-dev,
+ qt6-qmake,
+ qt6-base-dev,
  quilt,
  uuid-dev,
 
@@ -330,7 +327,6 @@ Depends:
  libwww-perl,
  libxml-simple-perl,
  mythtv-common,
- libqt5webenginewidgets5,
  python3,
  wmctrl,
  zenity | kdebase-bin,
@@ -375,7 +371,7 @@ Package: libmyth
 Architecture: amd64 arm64
 Section: libs
 Depends:
- libqt5sql5-mysql,
+ libqt6sql6-mysql,
  ${misc:Depends},
  ${shlibs:Depends},
 Conflicts:
